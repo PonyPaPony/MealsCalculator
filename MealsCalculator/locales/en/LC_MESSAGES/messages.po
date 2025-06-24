@@ -1,0 +1,270 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the MealsCalculator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MealsCalculator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-24 15:15+0300\n"
+"PO-Revision-Date: 2025-06-24 15:17+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#: src\data_defaults.py:354 src\data_defaults.py:365 src\data_defaults.py:386
+#: src\data_defaults.py:400 src\gui_factory.py:35 src\gui_factory.py:320
+#: src\localization.py:53 src\localization.py:116 src\main_controller.py:91
+#: src\product_manager.py:73 src\product_manager.py:114
+#: src\product_manager.py:121 src\product_manager.py:160
+#: src\product_manager.py:163 src\product_manager.py:166
+#: src\product_manager.py:242 src\product_manager.py:247
+msgid "Ошибка"
+msgstr "Error"
+
+#: src\data_defaults.py:354 src\data_defaults.py:366
+msgid "Не существующий язык."
+msgstr "Non-existent language."
+
+#: src\data_defaults.py:381 src\gui_factory.py:336 src\gui_factory.py:343
+#: src\product_manager.py:79 src\product_manager.py:119
+#: src\product_manager.py:171 src\product_manager.py:211
+msgid "Успех"
+msgstr "Success"
+
+#: src\data_defaults.py:386
+#, python-brace-format
+msgid "Не удалось записать {f}."
+msgstr "Failed to record {f}"
+
+#: src\data_defaults.py:400
+#, python-brace-format
+msgid "Ошибка чтения {f}. Загружаем дефолтные данные"
+msgstr "Read error {f}. Loading default data"
+
+#: src\gui_factory.py:36
+#, python-brace-format
+msgid "Произошла Ошибка: {error}"
+msgstr "Error Occurred: {error}"
+
+#: src\gui_factory.py:45
+msgid "Ошибка: Не указан экземпляр Tkinter."
+msgstr "Error: Tkinter instance not specified."
+
+#: src\gui_factory.py:54
+#, python-brace-format
+msgid "Иконка {icon_path} не найдена. Используется стандартная иконка."
+msgstr "Icon {icon_path} was not found. The default icon is used."
+
+#: src\gui_factory.py:320
+msgid "Некорректный формат данных для сохранения."
+msgstr "Incorrect data format for saving."
+
+#: src\gui_factory.py:337
+#, python-brace-format
+msgid "Данные сохранены в {file_path}"
+msgstr "Data stored in {file_path}"
+
+#: src\gui_factory.py:343
+msgid "Языковые настройки сброшены!"
+msgstr "Language settings reset!"
+
+#: src\gui_factory.py:344
+msgid "Инфо"
+msgstr "Info"
+
+#: src\gui_factory.py:344
+msgid "Приложение будет закрыто."
+msgstr "The application will be closed."
+
+#: src\gui_factory.py:345
+msgid "Успешно: языковые настройки сброшены."
+msgstr "Success: Language settings have been reset."
+
+#: src\localization.py:47
+#, python-brace-format
+msgid "Выбранный язык: {language_code}"
+msgstr "Language Selected: {language_code}"
+
+#. fallback — просто возвращает строку без перевода
+#: src\localization.py:51
+msgid "Файл перевода не найден."
+msgstr "Translation file not found."
+
+#: src\localization.py:116
+msgid "Экземпляр tkinter не существует."
+msgstr "The tkinter instance does not exist."
+
+#: src\main_controller.py:57
+msgid "Рассчитать калории"
+msgstr "Calculate calories"
+
+#: src\main_controller.py:58
+msgid "Меню управления продуктами"
+msgstr "Product management menu"
+
+#: src\main_controller.py:59
+msgid "Показать статистику"
+msgstr "Show Stats"
+
+#: src\main_controller.py:60
+msgid "Выход"
+msgstr "Exit"
+
+#: src\main_controller.py:61
+msgid "Cбросить Языковые Настройки"
+msgstr "Reset Language Settings"
+
+#: src\main_controller.py:79
+msgid "Главное Меню"
+msgstr "Main Menu"
+
+#: src\main_controller.py:91
+msgid "Нет продуктов для расчёта."
+msgstr "No products for calculation."
+
+#: src\main_controller.py:110
+msgid "+ Добавить продукт"
+msgstr "+ Add product"
+
+#: src\main_controller.py:111
+msgid "Рассчитать"
+msgstr "Calculate"
+
+#: src\main_controller.py:112 src\product_manager.py:87
+#: src\product_manager.py:127 src\product_manager.py:177
+msgid "Назад"
+msgstr "Back"
+
+#: src\main_controller.py:129 src\product_manager.py:55
+msgid "Добавить продукт"
+msgstr "Add product"
+
+#: src\main_controller.py:130 src\product_manager.py:98
+msgid "Удалить продукт"
+msgstr "Delete product"
+
+#: src\main_controller.py:131
+msgid "Изменить Калорийность"
+msgstr "Change Calories"
+
+#: src\main_controller.py:140
+msgid "Назад в меню"
+msgstr "Back to menu"
+
+#: src\product_manager.py:59
+msgid "Название продукта:"
+msgstr "Product name:"
+
+#: src\product_manager.py:61
+msgid "Калорийность:"
+msgstr "Calories:"
+
+#: src\product_manager.py:70 src\product_manager.py:81
+msgid "Внимание"
+msgstr "Attention"
+
+#: src\product_manager.py:70
+msgid "Такой продукт уже существует."
+msgstr "This product already exists."
+
+#: src\product_manager.py:73
+msgid "Поле продукта не может быть пустым."
+msgstr "The product filed cannot be empty."
+
+#: src\product_manager.py:79
+#, python-brace-format
+msgid "Добавлен {n} с калорийностью {kcal}."
+msgstr "Added {n} with {kcal} calories."
+
+#: src\product_manager.py:81
+msgid "Неверный формат калорийности."
+msgstr "Incorrect calories format."
+
+#: src\product_manager.py:84
+msgid "Сохранить"
+msgstr "Save"
+
+#: src\product_manager.py:102
+msgid "Продукт для удаления:"
+msgstr "Product to delete:"
+
+#: src\product_manager.py:114 src\product_manager.py:160
+msgid "Введите название продукта."
+msgstr "Enter product name."
+
+#: src\product_manager.py:119
+#, python-brace-format
+msgid "Продукт {name} удалён."
+msgstr "{name} has been deleted."
+
+#: src\product_manager.py:121
+#, python-brace-format
+msgid "Продукт {name} не найден."
+msgstr "The product {name} is not found."
+
+#: src\product_manager.py:124 src\product_manager.py:324
+msgid "Удалить"
+msgstr "Delete"
+
+#: src\product_manager.py:140
+msgid "Изменить калорийность"
+msgstr "Change calories"
+
+#: src\product_manager.py:144
+msgid "Продукт:"
+msgstr "Product:"
+
+#: src\product_manager.py:146
+msgid "Новая калорийность:"
+msgstr "New calories:"
+
+#: src\product_manager.py:163
+#, python-brace-format
+msgid "Продукт {n} не найден."
+msgstr "The product {n} was not found."
+
+#: src\product_manager.py:166
+msgid "Введите калории для продукта."
+msgstr "Enter calories for product."
+
+#: src\product_manager.py:171
+#, python-brace-format
+msgid "Калорийность {n} обновлена."
+msgstr "{n} calories have been updated."
+
+#: src\product_manager.py:174
+msgid "Изменить"
+msgstr "Change"
+
+#: src\product_manager.py:211
+msgid "Продукты сохранены!"
+msgstr "Products saved!"
+
+#: src\product_manager.py:242
+msgid "Название и калорийность обязательны."
+msgstr "Name and calories are required."
+
+#: src\product_manager.py:247
+#, python-brace-format
+msgid "Калорийность {kcal} не является числом."
+msgstr "Calories {kcal} are not a number."
+
+#: src\product_manager.py:280
+#, python-brace-format
+msgid "Продукт '{name}' не найден в базе."
+msgstr "{name} is not found in the database."
+
+#: src\product_manager.py:295
+msgid "Результат"
+msgstr "Result"
+
+#: logs\log.py:16
+msgid "Приложение Запущено"
+msgstr "App Launched"

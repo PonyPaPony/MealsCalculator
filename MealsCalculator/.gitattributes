@@ -1,0 +1,25 @@
+# Обеспечиваем единый стиль окончания строк для всех текстовых файлов
+* text=auto
+
+# Python файлы — LF (Unix стиль)
+*.py text eol=lf
+
+# PO файлы (gettext, переводы) — LF
+*.po text eol=lf
+
+# MO файлы — это бинарные, Git не должен пытаться их трекать как текст
+*.mo binary
+
+# Markdown / docs — LF
+*.md text eol=lf
+
+# Конфиги — тоже LF
+*.ini text eol=lf
+*.cfg text eol=lf
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Windows-специфичные файлы (если надо) — CRLF
+# *.bat text eol=crlf
+# *.cmd text eol=crlf
