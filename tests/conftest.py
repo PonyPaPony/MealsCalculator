@@ -89,19 +89,16 @@ def fake_root():
 
 @pytest.fixture
 def mock_tkinter():
-    with patch("tkinter.Tk") as mock_tk, patch(
-        "tkinter.Toplevel"
-    ) as mock_toplevel, patch("tkinter.Frame") as mock_frame, patch(
-        "tkinter.Button"
-    ) as mock_button, patch(
-        "tkinter.Scrollbar"
-    ) as mock_scrollbar, patch(
-        "tkinter.Listbox"
-    ) as mock_listbox, patch(
-        "tkinter.Label"
-    ) as mock_label, patch(
-        "tkinter.Entry"
-    ) as mock_entry:
+    with (
+        patch("tkinter.Tk") as mock_tk,
+        patch("tkinter.Toplevel") as mock_toplevel,
+        patch("tkinter.Frame") as mock_frame,
+        patch("tkinter.Button") as mock_button,
+        patch("tkinter.Scrollbar") as mock_scrollbar,
+        patch("tkinter.Listbox") as mock_listbox,
+        patch("tkinter.Label") as mock_label,
+        patch("tkinter.Entry") as mock_entry,
+    ):
 
         mocks = {
             "Tk": mock_tk,

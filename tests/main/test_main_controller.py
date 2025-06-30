@@ -9,19 +9,16 @@ from main_controller import MainController
 
 class MockController:
     def __init__(self, instance, language, with_attrs=False):
-        with patch("main_controller.DataDefaults"), patch(
-            "main_controller.ProductContext"
-        ), patch("main_controller.ProductManager"), patch(
-            "main_controller.ProductCalculator"
-        ), patch(
-            "main_controller.Factory"
-        ), patch(
-            "main_controller.WidgetBuilder"
-        ), patch(
-            "main_controller.StatsManager"
-        ), patch(
-            "main_controller.tk.Tk"
-        ) as mock_tk:
+        with (
+            patch("main_controller.DataDefaults"),
+            patch("main_controller.ProductContext"),
+            patch("main_controller.ProductManager"),
+            patch("main_controller.ProductCalculator"),
+            patch("main_controller.Factory"),
+            patch("main_controller.WidgetBuilder"),
+            patch("main_controller.StatsManager"),
+            patch("main_controller.tk.Tk") as mock_tk,
+        ):
 
             self.language = language
             self.main = instance(

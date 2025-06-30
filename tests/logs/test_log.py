@@ -11,9 +11,10 @@ def test_logger_return_if_already_initialized(tmp_path):
     original_handlers = logger.handlers[:]
     logger.handlers.clear()
 
-    with patch("log.RotatingFileHandler") as mock_handler_cls, patch(
-        "logging.info"
-    ) as mock_info:
+    with (
+        patch("log.RotatingFileHandler") as mock_handler_cls,
+        patch("logging.info") as mock_info,
+    ):
         mock_handler = MagicMock()
         mock_handler_cls.return_value = mock_handler
 

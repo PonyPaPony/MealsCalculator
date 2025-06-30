@@ -89,11 +89,12 @@ def test_setup_autocomplete_handlers(
     listbox = autocomplete_helper["listbox"]
     suggestions = list(autocomplete_helper["products"].keys())
 
-    with patch.object(entry, "bind", wraps=entry.bind) as mock_entry_bind, patch.object(
-        listbox, "bind", wraps=listbox.bind
-    ) as mock_listbox_bind, patch.object(entry, "delete") as mock_delete, patch.object(
-        entry, "insert"
-    ) as mock_insert:
+    with (
+        patch.object(entry, "bind", wraps=entry.bind) as mock_entry_bind,
+        patch.object(listbox, "bind", wraps=listbox.bind) as mock_listbox_bind,
+        patch.object(entry, "delete") as mock_delete,
+        patch.object(entry, "insert") as mock_insert,
+    ):
 
         app.setup_autocomplete(entry, suggestions, listbox)
 
@@ -127,16 +128,13 @@ def test_on_select_behavior(instance, fake_root, autocomplete_helper, key, targe
     listbox = autocomplete_helper["listbox"]
     suggestions = list(autocomplete_helper["products"].keys())
 
-    with patch.object(entry, "delete") as mock_delete, patch.object(
-        entry, "insert"
-    ) as mock_insert, patch.object(
-        listbox, "delete"
-    ) as mock_listbox_delete, patch.object(
-        listbox, "bind", wraps=listbox.bind
-    ) as mock_listbox_bind, patch.object(
-        listbox, "curselection", return_value=(0,)
-    ), patch.object(
-        listbox, "get", return_value=target
+    with (
+        patch.object(entry, "delete") as mock_delete,
+        patch.object(entry, "insert") as mock_insert,
+        patch.object(listbox, "delete") as mock_listbox_delete,
+        patch.object(listbox, "bind", wraps=listbox.bind) as mock_listbox_bind,
+        patch.object(listbox, "curselection", return_value=(0,)),
+        patch.object(listbox, "get", return_value=target),
     ):
 
         app.setup_autocomplete(entry, suggestions, listbox)

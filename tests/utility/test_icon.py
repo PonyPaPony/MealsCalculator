@@ -59,9 +59,10 @@ def test_icon_not_found(expected_icon_path):
     Ожидается, что iconbitmap не вызывается,
     и появляется предупреждение в логах.
     """
-    with patch("pathlib.Path.exists", return_value=False) as mock_exists, patch(
-        "gui_factory.logger"
-    ) as mock_logger:
+    with (
+        patch("pathlib.Path.exists", return_value=False) as mock_exists,
+        patch("gui_factory.logger") as mock_logger,
+    ):
         mock_window = MagicMock(spec=tk.Tk)
         set_window_icon(mock_window)
 
