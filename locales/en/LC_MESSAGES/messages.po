@@ -1,0 +1,335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the MealsCalculator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MealsCalculator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-30 14:26+0300\n"
+"PO-Revision-Date: 2025-06-30 14:27+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#: src\data_defaults.py:354 src\data_defaults.py:365 src\data_defaults.py:386
+#: src\data_defaults.py:400 src\gui_factory.py:326 src\localization.py:53
+#: src\localization.py:119 src\main_controller.py:96 src\product_manager.py:75
+#: src\product_manager.py:117 src\product_manager.py:124
+#: src\product_manager.py:164 src\product_manager.py:167
+#: src\product_manager.py:170 src\product_manager.py:249
+#: src\product_manager.py:254
+msgid "Ошибка"
+msgstr "Error"
+
+#: src\data_defaults.py:354 src\data_defaults.py:366
+msgid "Не существующий язык."
+msgstr "Non-existent language."
+
+#: src\data_defaults.py:381 src\gui_factory.py:342 src\gui_factory.py:350
+#: src\product_manager.py:81 src\product_manager.py:122
+#: src\product_manager.py:175 src\product_manager.py:216
+msgid "Успех"
+msgstr "Success"
+
+#: src\data_defaults.py:386
+#, python-brace-format
+msgid "Не удалось записать {f}."
+msgstr "Failed to record {f}"
+
+#: src\data_defaults.py:400
+#, python-brace-format
+msgid "Ошибка чтения {f}. Загружаем дефолтные данные"
+msgstr "Read error {f}. Loading default data"
+
+#: src\gui_factory.py:35
+msgid "Ошибка:"
+msgstr "Error:"
+
+#: src\gui_factory.py:36
+#, python-brace-format
+msgid "{error}"
+msgstr "{error}"
+
+#: src\gui_factory.py:45
+msgid "Ошибка: Не указан экземпляр Tkinter."
+msgstr "Error: Tkinter instance not specified."
+
+#: src\gui_factory.py:54
+#, python-brace-format
+msgid "Иконка {icon_path} не найдена. Используется стандартная иконка."
+msgstr "Icon {icon_path} was not found. The default icon is used."
+
+#: src\gui_factory.py:326
+msgid "Некорректный формат данных для сохранения."
+msgstr "Incorrect data format for saving."
+
+#: src\gui_factory.py:343
+#, python-brace-format
+msgid "Данные сохранены в {file_path}"
+msgstr "Data stored in {file_path}"
+
+#: src\gui_factory.py:350
+msgid "Языковые настройки сброшены!"
+msgstr "Language settings reset!"
+
+#: src\gui_factory.py:351
+msgid "Инфо"
+msgstr "Info"
+
+#: src\gui_factory.py:351
+msgid "Приложение будет закрыто."
+msgstr "The application will be closed."
+
+#: src\gui_factory.py:352
+msgid "Успешно: языковые настройки сброшены."
+msgstr "Success: Language settings have been reset."
+
+#. fallback — просто возвращает строку без перевода
+#: src\localization.py:51
+msgid "Файл перевода не найден."
+msgstr "Translation file not found."
+
+#: src\localization.py:108
+#, python-brace-format
+msgid "Выбранный язык: {language_code}"
+msgstr "Language Selected: {language_code}"
+
+#: src\localization.py:119
+msgid "Экземпляр tkinter не существует."
+msgstr "The tkinter instance does not exist."
+
+#: src\main_controller.py:62
+msgid "Рассчитать калории"
+msgstr "Calculate calories"
+
+#: src\main_controller.py:63
+msgid "Меню управления продуктами"
+msgstr "Product management menu"
+
+#: src\main_controller.py:64
+msgid "Показать статистику"
+msgstr "Show Stats"
+
+#: src\main_controller.py:65
+msgid "Выход"
+msgstr "Exit"
+
+#: src\main_controller.py:66
+msgid "Cбросить Языковые Настройки"
+msgstr "Reset Language Settings"
+
+#: src\main_controller.py:84
+msgid "Главное Меню"
+msgstr "Main Menu"
+
+#: src\main_controller.py:96
+msgid "Нет продуктов для расчёта."
+msgstr "No products for calculation."
+
+#: src\main_controller.py:115
+msgid "+ Добавить продукт"
+msgstr "+ Add product"
+
+#: src\main_controller.py:116
+msgid "Рассчитать"
+msgstr "Calculate"
+
+#: src\main_controller.py:117 src\main_controller.py:169
+#: src\product_manager.py:89 src\product_manager.py:130
+#: src\product_manager.py:181
+msgid "Назад"
+msgstr "Back"
+
+#: src\main_controller.py:134 src\product_manager.py:57
+msgid "Добавить продукт"
+msgstr "Add product"
+
+#: src\main_controller.py:135 src\product_manager.py:101
+msgid "Удалить продукт"
+msgstr "Delete product"
+
+#: src\main_controller.py:136
+msgid "Изменить Калорийность"
+msgstr "Change Calories"
+
+#: src\main_controller.py:145
+msgid "Назад в меню"
+msgstr "Back to menu"
+
+#: src\main_controller.py:162
+msgid "Статистика за 7 дней:"
+msgstr "Statistics for the past 7 days:"
+
+#: src\main_controller.py:163
+msgid "7 дней"
+msgstr "7 days"
+
+#: src\main_controller.py:164
+msgid "Статистика за 30 дней:"
+msgstr "Statistics for the past 30 days:"
+
+#: src\main_controller.py:165
+msgid "30 дней"
+msgstr "30 days"
+
+#: src\main_controller.py:166
+msgid "Статистика за указанный период:"
+msgstr "Statistics for the specified period:"
+
+#. позже добавим
+#: src\main_controller.py:167
+msgid "Статистика за все время:"
+msgstr "Statistics for all time:"
+
+#: src\main_controller.py:168
+msgid "Все время"
+msgstr "All-Time"
+
+#: src\main_controller.py:192
+msgid "Нет данных за указанный период"
+msgstr "No data for the specified period"
+
+#: src\main_controller.py:202
+msgid "Дата"
+msgstr "Data"
+
+#: src\main_controller.py:203
+msgid "Итого Калорий"
+msgstr "Total Calories"
+
+#: src\main_controller.py:204
+msgid "Калорий за День"
+msgstr "Calories per Day"
+
+#: src\product_manager.py:61
+msgid "Название продукта:"
+msgstr "Product name:"
+
+#: src\product_manager.py:63
+msgid "Калорийность:"
+msgstr "Calories:"
+
+#: src\product_manager.py:72 src\product_manager.py:83
+msgid "Внимание"
+msgstr "Attention"
+
+#: src\product_manager.py:72
+msgid "Такой продукт уже существует."
+msgstr "This product already exists."
+
+#: src\product_manager.py:75
+msgid "Поле продукта не может быть пустым."
+msgstr "The product filed cannot be empty."
+
+#: src\product_manager.py:81
+#, python-brace-format
+msgid "Добавлен {n} с калорийностью {kcal}."
+msgstr "Added {n} with {kcal} calories."
+
+#: src\product_manager.py:83
+msgid "Неверный формат калорийности."
+msgstr "Incorrect calories format."
+
+#: src\product_manager.py:86
+msgid "Сохранить"
+msgstr "Save"
+
+#: src\product_manager.py:105
+msgid "Продукт для удаления:"
+msgstr "Product to delete:"
+
+#: src\product_manager.py:117 src\product_manager.py:164
+msgid "Введите название продукта."
+msgstr "Enter product name."
+
+#: src\product_manager.py:122
+#, python-brace-format
+msgid "Продукт {name} удалён."
+msgstr "{name} has been deleted."
+
+#: src\product_manager.py:124
+#, python-brace-format
+msgid "Продукт {name} не найден."
+msgstr "The product {name} is not found."
+
+#: src\product_manager.py:127 src\product_manager.py:334
+msgid "Удалить"
+msgstr "Delete"
+
+#: src\product_manager.py:144
+msgid "Изменить калорийность"
+msgstr "Change calories"
+
+#: src\product_manager.py:148
+msgid "Продукт:"
+msgstr "Product:"
+
+#: src\product_manager.py:150
+msgid "Новая калорийность:"
+msgstr "New calories:"
+
+#: src\product_manager.py:167
+#, python-brace-format
+msgid "Продукт {n} не найден."
+msgstr "The product {n} was not found."
+
+#: src\product_manager.py:170
+msgid "Введите калории для продукта."
+msgstr "Enter calories for product."
+
+#: src\product_manager.py:175
+#, python-brace-format
+msgid "Калорийность {n} обновлена."
+msgstr "{n} calories have been updated."
+
+#: src\product_manager.py:178
+msgid "Изменить"
+msgstr "Change"
+
+#: src\product_manager.py:216
+msgid "Продукты сохранены!"
+msgstr "Products saved!"
+
+#: src\product_manager.py:249
+msgid "Название и калорийность обязательны."
+msgstr "Name and calories are required."
+
+#: src\product_manager.py:254
+#, python-brace-format
+msgid "Калорийность {kcal} не является числом."
+msgstr "Calories {kcal} are not a number."
+
+#: src\product_manager.py:289
+#, python-brace-format
+msgid "Продукт '{name}' не найден в базе."
+msgstr "{name} is not found in the database."
+
+#: src\product_manager.py:304
+msgid "Результат"
+msgstr "Result"
+
+#: src\stats_manager.py:68
+#, python-brace-format
+msgid "Неизвестный период: {period}"
+msgstr "Unknown period: {period}"
+
+#: logs\log.py:16
+msgid "Приложение Запущено"
+msgstr "App Launched"
+
+#~ msgid "Продукты"
+#~ msgstr "Products"
+
+#~ msgid "Итого"
+#~ msgstr "Total"
+
+#, python-brace-format
+#~ msgid "Произошла Ошибка: {error}"
+#~ msgstr "Error Occurred: {error}"
