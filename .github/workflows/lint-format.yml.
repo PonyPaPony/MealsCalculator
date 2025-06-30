@@ -1,0 +1,41 @@
+name: Lint and Format with Black and Ruff
+
+on: [push, pull_request]
+
+jobs:
+  lint-format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install black ruff
+
+      - name: Run Black (autoformat)
+        run: black .
+
+      - name: Run Ruff (lint + fix)
+        run: ruff check . --fix
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "Autoformat with Black and Ruff"
+
+      - name: Pull with rebase
+        run: git pull --rebase origin ${{ github.ref_name }}
+
+      - name: Push changes
+        run: git push
